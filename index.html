@@ -1,0 +1,194 @@
+<!--                             -*- Mode: Html -*- 
+     File              - index.html
+     Description       - index for lisp programs
+     Author            - Tim Bradshaw (tfb at fowey.cley.com)
+     Created On        - Tue Apr 17 08:25:16 2007
+     Last Modified On  - Thu Apr 19 20:56:04 2007
+     Last Modified By  - Tim Bradshaw (tfb at fowey.cley.com)
+     Update Count      - 4
+     Status            - Unknown
+     
+     $Id: //depot/www-tfeb-org/before-2013-prune/www-tfeb-org/html/programs/lisp/index.html#1 $
+ -->
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <link title="tfeb" href="../../lib/tfeb.css"
+      type="text/css" rel="stylesheet">
+    <title>Lisp programs</title>
+  </head>
+  <body bgcolor="black" text="gray" link="#E0E0E0" vlink="#A0A0A0"
+    alink="white">
+    <table>
+      <tbody>
+        <tr valign="baseline">
+          <th align="right"><h2>Lisp</h2></th>
+          <th align="left"><h2>Programs</h2></th>
+        </tr>
+        <tr valign="baseline">
+          <td align="right"><a href="../../lisp/index.html">Information</a></td>
+          <td align="left">about this code</td>
+        </tr>
+
+        <tr valign="baseline">
+          <th align="right"><h3>Small</h3></th>
+          <th align="left"><h3>hacks</h3></th>
+        </tr>
+        <tr valign="top">
+          <td align="right"><a href="conduit-packages.lisp">Conduits</a></td>
+          <td align="left">a souped-up package system for CL</td>
+        </tr>
+        <tr valign="top">
+          <td align="right"><a href="collecting.lisp">Collecting</a></td>
+          <td align="left">macros to collect lists forwards</td>
+        </tr>
+        <tr valign="top">
+          <td align="right"><a href="memoize.lisp">Memoize</a></td>
+          <td align="left">Memoizing functions, including local functions</td>
+        </tr>
+        <tr valign="top">
+          <td align="right"><a href="iterate.lisp">Applicative iteration</a></td>
+          <td align="left">Scheme-style named let</td>
+        </tr>
+
+        <tr valign="top">
+          <td align="right"><a href="htout.lisp">HTML generation</a></td>
+          <td align="left">the WITH-HTML-OUTPUT macro</td>
+        </tr>
+
+        <tr valign="top">
+          <td align="right"><a href="abstract-classes.lisp">Abstract classes</a></td>
+          <td align="left">non-instantiable classes for CLOS, also
+          final, non-subclassable, classes</td>
+        </tr>
+
+        <tr valign="top">
+          <td align="right"><a href="singleton-class.lisp">Singleton classes</a></td>
+          <td align="left">Classes which can have only a single
+            instance in CLOS.</td>
+        </tr>
+
+        <tr valign="top">
+          <td align="right"><a href="dynamic-state.lisp">Dynamic state</a></td>
+          <td align="left">structured access to special variables for CL</td>
+        </tr>
+        <tr valign="top">
+          <td align="right"><a
+          href="wrapping-standard.lisp">Wrapping-standard
+              method combination</a></td>
+          <td align="left">with "wrapping" methods which are like
+          around methods but called in most-specific-last order and
+          outside all other methods</td>
+        </tr>
+
+        <tr valign="top">
+          <td align="right"><a
+          href="read-package.lisp">Read-time packages</a></td>
+          <td align="left">Support for selecting the package on a
+            per-form basis in CL.</td>
+        </tr>
+
+        <tr valign="top">
+          <td align="right"><a
+          href="hierarchical-packages.lisp">Hierarchical packages</a></td>
+          <td align="left">Support for hierarchical package names in
+            CL.  This is not entirely portable code as it needs to be
+            glued into the package system.  Works for LispWorks and
+            CMUCL (ACL does not need it).</td>
+        </tr>
+
+        <tr>
+          <td align="right"></td>
+          <td align="left"></td>
+        </tr>
+
+        <tr valign="baseline">
+          <th align="right"><h3>Implementation-specific</h3></th>
+          <th align="left"><h3>hacks</h3></th>
+        </tr>
+        <tr valign="top">
+          <td align="right"><a
+          href="lw-commands.lisp">Colon commands<br>for LispWorks</a></td>
+          <td align="left">Support for defining new top-level `colon
+          commands' in LispWorks.</td>
+        </tr>
+
+        <tr>
+          <td align="right"></td>
+          <td align="left"></td>
+        </tr>
+
+        <tr valign="baseline">
+          <th align="right"><h3>Larger</h3></th>
+          <th align="left"><h3>programs</h3></th>
+        </tr>
+        <tr valign="top">
+          <td align="right"><a href="clc.tar.gz">CLC</a></td> <td
+          align="left">The Common/CORBA Lisp Client. Allows simple
+          access to a Lisp server program from the command line in
+          Unix and other similar systems.  Mostly an exercise in
+          learning CORBA.  Requires LispWorks+CORBA but much of the
+          code should work in other Lisps which have CORBA bindings.
+          The client could be in any language which has CORBA
+          bindings.</td>
+        </tr>
+
+        <tr valign="top">
+          <td align="right"><a href="dssv.tar.gz">DSSV</a></td> 
+          <td align="left">DSSV - DEFSTRUCT SLOT-VALUE - provides a
+            portable way of getting at the slots and slot names of
+            structure objects.  It doesn't use a MOP and thus relies
+            on a special version of DEFSTRUCT.  Requires conduits to
+            define the mutant CL package.  <em>Not heavily tested</em>
+            - known to work in CMUCL and LispWorks.</td>
+        </tr>
+        <tr>
+          <td align="right"></td>
+          <td align="left"></td>
+        </tr>
+
+        <tr valign="baseline">
+          <th align="right"><h3>Toy</h3></th>
+          <th align="left"><h3>Programs</h3></th>
+        </tr>
+
+        <tr valign="top">
+          <td align="right"><a href="slip.lisp">Subject-verb-object</a></td>
+          <td align="left">or: Look, Lisp is Object Oriented!</td>
+        </tr>
+
+        <tr valign="top">
+          <td align="right"><a href="glex.lisp">Global lexicals</a></td>
+          <td align="left">faked using symbol macros</td>
+        </tr>
+
+        <tr valign="top">
+          <td align="right"><a href="ncase.lisp">A macro</a></td>
+          <td align="left">which is like CASE but can use a jump-table</td>
+        </tr>
+
+        <tr valign="top">
+          <td align="right"><a href="for.lisp">Iterators</a></td>
+          <td align="left">in the style of Python and other
+            fashionable languages</td>
+        </tr>
+
+        <tr>
+          <td align="right"></td>
+          <td align="left"></td>
+        </tr>
+
+        <tr>
+          <td align="right"></td>
+          <td align="left"><address>
+              <a href="../../index.html"><img src="../../images/tfeb-blur-icon.gif"
+                  alt="[TFEB]" border="0"></a>
+            </address></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
