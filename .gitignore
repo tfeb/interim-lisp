@@ -1,0 +1,14 @@
+# Ignore emacs backups & auto save files
+*~
+\#*\#
+.\#*
+
+# Tags files
+TAGS
+
+# OSX noise
+.DS_Store
+
+# and some scratch directories
+tmp/
+scratch/
