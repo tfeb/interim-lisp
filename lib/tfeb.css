@@ -1,0 +1,90 @@
+/*                              -*- Mode: Css -*- 
+ * File		     - tfeb.css
+ * Description	     - Ordinary tfeb css
+ * Author	     - Tim Bradshaw (tfb at lostwithiel.tfeb.org)
+ * Created On	     - Wed May  5 12:21:18 1999
+ * Last Modified On  - Sun Jan 11 21:08:45 2004
+ * Last Modified By  - Tim Bradshaw (tfb at lostwithiel.cley.com)
+ * Update Count	     - 94
+ * Status	     - Unknown
+ * 
+ * $Id: //depot/www-tfeb-org/before-2013-prune/www-tfeb-org/html/lib/tfeb.css#1 $
+ */
+
+
+BODY {
+  background-color: black;
+  color: gray;
+  font-family: sans-serif;
+  margin-top: 2ex;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+
+A:link {
+  color: #E0E0E0;
+  text-decoration: none;
+}
+
+A:active {
+  color: white;
+  text-decoration: none;
+}
+
+A:visited {
+  color: #A0A0A0;
+  text-decoration: none;
+}
+
+.highlight {
+  color: blue;
+}
+
+.invisible {
+  color: black;
+}
+
+.lisp {
+  color: lightblue;
+}
+
+H1,H2,H3,H4,H5 {
+  color: darkgray;
+}
+
+/* Bug in netscape 4.5*/
+TD,TH {
+  color: gray;
+}
+
+/* Fixed TOCs (CSS 2 defines position: fixed) */
+.ft-toc { 
+  float: right;
+  position: fixed; 
+  right: 1em; top: 1ex;  width: 25%
+}
+
+.ft-toc li {
+  list-style-image: url(../images/bullet.gif)
+}
+
+.ft-body {
+  margin-right: 33%;
+  margin-left: 2em
+}
+
+/* highlight */
+.hl {
+  color: white;
+}
+
+/* splash stuff */
+.splash-body-address {
+    font-size: smaller;
+}
+
+.splash-top-bar {
+    background-color: navy;
+}
+
